@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "esnext",
+    "declaration": true,
+    "outDir": "./dist"
+  },
+  "include": ["index.ts", "tests"],
+  "exclude": ["node_modules"]
+}

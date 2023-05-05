@@ -1,0 +1,30 @@
+{
+  "private": false,
+  "name": "@eliseomartelli/moo",
+  "version": "0.0.1",
+  "repository": "https://github.com/eliseomartelli/moo",
+  "type": "module",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "types": "dist/index.d.js",
+  "files": [
+    "/dist"
+  ],
+  "devDependencies": {
+    "esbuild": "^0.17.18",
+    "tsc": "^2.0.4",
+    "tsm": "^2.3.0",
+    "uvu": "^0.5.6"
+  },
+  "scripts": {
+    "build": "tsc && esbuild dist/index.js --minify --outfile=dist/index.min.js",
+    "test": "uvu -r tsm tests"
+  },
+  "dependencies": {
+    "typescript": "^5.0.4"
+  },
+  "author": "Eliseo Martelli <me@eliseomartelli.it>",
+  "publishConfig": {
+    "access": "public"
+  }
+}
